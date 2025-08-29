@@ -57,7 +57,7 @@ document.getElementById('clear-history').addEventListener('click',function(){
 });
 
 
-// // Copy Function
+// Copy Function
 const copyBtns = document.getElementsByClassName('copy-btn');
 
 for(const copyBtn of copyBtns){
@@ -73,7 +73,7 @@ for(const copyBtn of copyBtns){
         const copied = navigator.clipboard.writeText(ServiceNumber);
         
         if(copied){
-            alert(`The Number is Copied ${ServiceNumber}`)
+            alert(`${ServiceNumber} is Copied `)
         }
         else{
             alert('The Number is not Copied')
